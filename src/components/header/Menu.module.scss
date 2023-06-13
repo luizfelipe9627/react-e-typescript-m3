@@ -1,0 +1,74 @@
+@import "../../styles/utils/variables.scss";
+
+.menuWrapper {
+  position: absolute;
+  /* O inset é uma abreviação do top, bottom, left e right juntos. */
+  inset: 0;
+  display: flex;
+  pointer-events: none;
+  opacity: 0;
+
+  .menuContent {
+    z-index: 2;
+    width: 90.5%;
+  }
+
+  .menuContent-header {
+    padding: 31px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $black-100;
+
+    a {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  .menuContent-nav {
+    background-color: $white;
+    height: 585px;
+    padding: 31px 16px;
+
+    li {
+      list-style: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: $primary-400;
+
+      &:nth-child(2) {
+        margin: 12px 0;
+      }
+    }
+  }
+
+  .menuOverlay {
+    position: fixed;
+    inset: 0;
+    background-color: #454545b2;
+    z-index: 1;
+  }
+}
+
+.menuOpened {
+  opacity: 1;
+  pointer-events: all;
+
+  @media (min-width: 280px) and (max-width: 1024px) {
+    width: 95.3%;
+  }
+}
+
+@media (min-width: 1025px) {
+  div:has(> .menuWrapper) {
+    display: none;
+  }
+}

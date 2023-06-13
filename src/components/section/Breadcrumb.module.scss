@@ -1,0 +1,39 @@
+@import "../../styles/utils/variables.scss";
+
+.breadcrumb {
+  padding: 30px 100px 0 100px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    padding: 30px 16px 0 16px;
+  }
+
+  img {
+    &:nth-child(1) {
+      @media (min-width: 2500px) {
+        width: 31px;
+      }
+    }
+    &:nth-child(2) {
+      margin: 0 10px;
+
+      @media (min-width: 2500px) {
+        width: 15px;
+      }
+    }
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: $primary-500;
+
+    @media (min-width: 2500px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}

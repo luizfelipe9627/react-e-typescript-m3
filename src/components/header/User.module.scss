@@ -1,0 +1,43 @@
+@import "../../styles/utils/variables.scss";
+
+.user {
+  display: flex;
+  align-items: center;
+
+  a {
+    color: $white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s linear;
+
+    @media (min-width: 2500px) {
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 33px;
+
+      img {
+        height: 54px;
+        width: 54px;
+      }
+    }
+
+    &:first-child {
+      margin-right: 55px;
+    }
+
+    &:hover {
+      font-weight: 500;
+    }
+
+    @media (max-width: 1024px) {
+      margin-right: 0;
+
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+}

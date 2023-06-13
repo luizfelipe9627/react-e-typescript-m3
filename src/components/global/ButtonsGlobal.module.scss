@@ -1,0 +1,41 @@
+@import "../../styles/utils/variables.scss";
+
+.buttonsGlobal {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+
+  a {
+    img {
+      @media (min-width: 2500px) {
+        width: 66px;
+        height: 66px;
+      }
+    }
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: $primary-500;
+    cursor: pointer;
+
+    @media (min-width: 2500px) {
+      width: 66px;
+      height: 66px;
+    }
+
+    img {
+      @media (min-width: 2500px) {
+        width: 25px;
+        height: 60px;
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+@import "../../styles/utils/variables.scss";
+
+.footerBottom {
+  padding: 15px 100px;
+  background-color: $black-100;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 2500px) {
+    padding: 24.5px 100px;
+  }
+
+  @media (max-width: 1024px) {
+    display: grid;
+    padding: 20px 16px;
+    grid-template-rows: repeat(3, max-content);
+  }
+
+  .footerBottom-text {
+    grid-row: 2;
+
+    p {
+      max-width: 42ch;
+      text-transform: capitalize;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 12px;
+
+      @media (min-width: 2500px) {
+        font-size: 20px;
+        line-height: 23px;
+      }
+
+      @media (max-width: 1024px) {
+        margin: 20px 0 15px 0;
+      }
+    }
+  }
+
+  .footerBottom-icons {
+    display: flex;
+    align-items: center;
+
+    div {
+      margin-right: 12px;
+
+      @media (max-width: 375px) {
+        margin-right: 11px;
+      }
+
+      img {
+        @media (max-width: 375px) {
+          width: 30px;
+        }
+
+        @media (min-width: 280px) and (max-width: 300px) {
+          width: 24.5px;
+        }
+
+        @media (min-width: 2500px) {
+          width: 70px;
+        }
+      }
+
+      @media (max-width: 374px) {
+        margin-right: 4px;
+      }
+
+      &:last-child {
+        img {
+          @media (min-width: 2500px) {
+            width: 106px;
+          }
+
+          @media (max-width: 375px) {
+            margin-left: 11px;
+            width: 45px;
+          }
+
+          @media (max-width: 374px) {
+            margin-left: 4px;
+          }
+
+          margin-left: 12px;
+        }
+      }
+
+      @media (min-width: 376px) and (max-width: 1024px) {
+        margin-right: 10px;
+      }
+    }
+
+    span {
+      border-left: 1px solid $primary-500;
+      height: 25px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .footerBottom-credits {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 12px;
+      margin-right: 12px;
+
+      @media (min-width: 2500px) {
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+
+    .footerBottom-credits-powered {
+      display: flex;
+      align-items: center;
+      margin-right: 13px;
+
+      img {
+        @media (min-width: 2500px) {
+          width: 84px;
+        }
+      }
+    }
+
+    .footerBottom-credits-developed {
+      display: flex;
+      align-items: center;
+
+      img {
+        @media (min-width: 2500px) {
+          width: 56px;
+        }
+      }
+    }
+  }
+}

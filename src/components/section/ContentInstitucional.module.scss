@@ -1,0 +1,41 @@
+@import "../../styles/utils/variables.scss";
+
+.contentInstitucional {
+  h2 {
+    margin: 12px 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+
+    @media (min-width: 2500px) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+
+    @media (max-width: 1024px) {
+      margin: 30px 0 12px 0;
+      text-align: center;
+    }
+  }
+
+  p {
+    font-size: 14.2px;
+    font-weight: 400;
+    line-height: 15px;
+    color: $primary-300;
+
+    &:nth-child(3) {
+      margin: 20px 0;
+    }
+
+    @media (min-width: 2500px) {
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}

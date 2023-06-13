@@ -1,0 +1,55 @@
+@import "../../styles/utils/variables.scss";
+
+.form {
+  position: relative;
+
+  @media (max-width: 1024px) {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .form-search {
+    height: 32px;
+    width: 264px;
+    border-radius: 5px;
+    padding: 7px 16px 7px 16px;
+    outline: 0;
+    border: 2px solid $primary-700;
+
+    @media (min-width: 2500px) {
+      height: 57px;
+      width: 515px;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 33px;
+    }
+
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+
+    &::placeholder {
+      font-weight: 400;
+      color: $primary-500;
+    }
+  }
+
+  .form-search-icon {
+    position: absolute;
+    background-color: transparent;
+    right: 17px;
+    bottom: 4px;
+    border: 0;
+    cursor: pointer;
+
+    @media (min-width: 2500px) {
+      bottom: 8px;
+
+      img {
+        height: 35px;
+        width: 35px;
+      }
+    }
+  }
+}
