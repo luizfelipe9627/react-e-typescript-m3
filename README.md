@@ -1,4 +1,4 @@
-# React e TypeScript - M3 Academy
+# React e TypeScript M3
 ![Badge](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)             
 
 <img src="https://github.com/luizfelipe9627/react-e-typescript-m3/blob/main/src/assets/img/apresentacao.gif" alt="Apresentação do desafio">
@@ -11,9 +11,10 @@ A M3 Academy lançou esse desafio para botar em prática o conhecimento dos alun
 
 ## 💻 Tecnologias utilizadas
 
-- ``REACT``
-- ``TYPESCRIPT``
-- ``SASS``
+- `REACT.JS`
+- `VITE.JS`
+- `TYPESCRIPT`
+- `SASS`
 
 ## 🧑‍💻 Criador
 
